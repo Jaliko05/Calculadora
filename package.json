@@ -1,12 +1,12 @@
 {
   "name": "calculadora",
   "private": true,
-  "homepage": "https://Jaliko05.github.io/Calculadora",
+  "homepage": "http://Jaliko05.github.io/Calculadora",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "deploy":"gh-pages -d dist",
-    "predeploy" :"npm run dist",
+    "predeploy" :"npm run build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
