@@ -1,0 +1,137 @@
+
+*{
+    color: white;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+body{
+    background-color: #D8E8F2;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resumen {
+    position: relative;
+    width: 45vh;
+    justify-content: left;
+    margin-right: 25vh;    
+}
+
+p {
+    font-family: 'Inconsolata', monospace;
+    padding: 15px;
+    color: black;
+    text-align: justify;
+
+}
+
+.contenedor__calculadora {
+  display: grid;
+  grid-template-rows: 150px  300px;
+  background-color: #2B3640;
+  box-shadow: 5px 5px 5px 5px #0700009f;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.contenedor__calculadora-display{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    background-color: #111111;
+    border-radius: 30px;
+    border:7px solid #BACBD9;
+    text-align: right;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#contenedor__calculadora-display-abajo{
+    font-size:1.5em ;
+    padding: 7px;
+}
+#contenedor__calculadora-display-arriba{
+    font-size:2em ;
+    padding: 7px;
+}
+
+.contenedor__calculadora-buttom{
+    margin-top: 15px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: repeat(5 30px);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.contenedor__calculadora-buttom-num{
+    color: #202931;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #BACBD9;
+    box-shadow: 5px 5px 10px -3px #0700009f, -5px -5px 10px -3px #204058;
+    user-select: none;
+    width: 100%;
+    border: none; 
+}
+.contenedor__calculadora-buttom div:nth-child(1){
+    grid-column: 1/3;
+}
+.contenedor__calculadora-buttom div:nth-child(16){
+    grid-column: 1/3;
+}
+
+buttom ButtonCal:active {
+    cursor: grabbing;
+    background-color: #1b2630;
+    color: #BACBD9;
+}
+buttom ButtonCal:hover{
+    cursor: grab;
+}
+
+@media screen and (max-width:750px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 150px;
+    }
+    p {
+        font-family: 'Inconsolata', monospace;
+        color: black;
+        text-align: justify;
+    
+    }
+    .resumen {
+        position: relative;
+        width: 45vh;
+        justify-content: left;
+        margin-right: 0; 
+        padding-bottom: 50px;   
+    }
+
+
+    .contenedor__calculadora-buttom{
+        margin-top: 15px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: repeat(5 30px);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+
+}
